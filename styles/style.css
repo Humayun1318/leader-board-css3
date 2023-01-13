@@ -8,7 +8,8 @@ body {
 }
 main {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 /* container style */
 .container {
@@ -16,8 +17,10 @@ main {
   width: 870px;
   padding: 30px;
   border-radius: 5px;
+  margin-bottom: 21px;
 }
-/* top players styles */
+/* --------------------------
+top players styles ---------------------------------*/
 .section-title {
   color: #562eff;
   font-weight: 500;
@@ -34,7 +37,7 @@ main {
 }
 .player {
   display: flex;
-  /* gap: 16px; */
+  
   align-items: center;
 }
 .player img {
@@ -51,8 +54,10 @@ hr {
   border: 1px solid #d1d1d1;
   margin-bottom: 30px;
 }
-/* Blogs styles */
-.top-blogs{
+/* ------------------ 
+    Blogs styles
+    ------------------ */
+.top-blogs {
   margin-bottom: 0px;
 }
 .blogs {
@@ -80,9 +85,65 @@ hr {
   font-size: 16px;
   color: #9f9f9f;
 }
-.blog > div{
+.blog > div {
   margin-left: 16px;
 }
-.blog > div p a{
+.blog > div p a {
   text-decoration: none;
+  color: #562eff;
+}
+/* --------------------------------
+       Latest courses styles
+-------------------------------- */
+.course img {
+  width: 224px;
+  height: 104px;
+}
+.courses {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 24px;
+  
+}
+.courses .course{
+  padding: 14px 16px 16px 12px;
+  box-shadow: 0px 6px 13px 0px rgba(0,0,0,0.05);
+  /* background-color: green; */
+  border-radius: 10px;
+  
+}
+.ourse-title {
+  font-weight: 500;
+  font-size: 20.0336px;
+  color: #1e1e1e;
+}
+.course-author {
+  font-weight: 400;
+  font-size: 14.6913px;
+  color: #ed6b4f;
+}
+
+.course-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.course-rating .filled {
+  color: #ffc014;
+}
+.course-rating .empty {
+  color: #aeaeae;
+}
+.course-rating > div span {
+  font-weight: 400;
+  font-size: 14.6913px;
+  color: #a2a2a2;
+  margin-left: 8px;
+}
+.clock {
+  background: #ffe4e8;
+  border-radius: 14.6913px;
+  font-weight: 600;
+  font-size: 14.6913px;
+  color: #ff4a60;
 }
